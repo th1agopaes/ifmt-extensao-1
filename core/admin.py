@@ -26,4 +26,4 @@ class ModuloAdmin(admin.ModelAdmin):
 @admin.register(Progresso)
 class ProgressoAdmin(admin.ModelAdmin):
     list_display = ("usuario", "modulo", "status", "pontos", "atualizado_em")
-    list_filter = ("status", )
+    list_filter = ("status", "modulo")
